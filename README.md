@@ -4,6 +4,18 @@ XMLスキーマ定義の検証をC#で行うためのサンプルプロジェク
 
 ![成果物](./docs/img/fruit.gif)  
 
+## 実行方法
+
+Visual Studioでプロジェクトをそのまま実行する。  
+また、検証エラーの状態に変更して、再度実行してみる。  
+
+Docker上で実行する場合には、以下のコマンドを実行。  
+
+```shell
+docker build -t xsd-sample .
+docker run --name my-xsd-sample xsd-sample
+```
+
 ## 参考文献
 
 - [東京電機大学 XML Schemaによるスキーマ記述](https://www.mlab.im.dendai.ac.jp/~yamada/web/xml/xmlschema.html)
