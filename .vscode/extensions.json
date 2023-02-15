@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "redhat.vscode-xml",
+    "ms-dotnettools.csharp",
+    "davidanson.vscode-markdownlint",
+    "github.copilot",
+    "mhutchie.git-graph",
+    "editorconfig.editorconfig"
+  ]
+}

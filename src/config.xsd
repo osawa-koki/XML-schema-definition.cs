@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="person">
+  <xsd:complexType>
+    <xsd:sequence>
+
+      <xsd:element name="name" type="xsd:string" />
+      <xsd:element name="age" type="xsd:date" />
+      <xsd:element name="sex">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Male" />
+            <xsd:enumeration value="Female" />
+            <xsd:enumeration value="Other" />
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="height" type="xsd:nonNegativeInteger"></xsd:element>
+      <xsd:element name="weight" type="xsd:nonNegativeInteger"></xsd:element>
+
+      <xsd:element name="educational-background">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="school" minOccurs="0"  maxOccurs="unbounded">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:element name="name" type="xsd:string" />
+                  <xsd:element name="majoring" type="xsd:string" nillable="true" minOccurs="0" />
+                  <xsd:element name="address" type="xsd:string" />
+                  <xsd:element name="entering-date" type="xsd:gYearMonth" />
+                  <xsd:element name="graduating-date" type="xsd:gYearMonth" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="professional-background">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="work" minOccurs="0"  maxOccurs="unbounded">
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:element name="name" type="xsd:string" />
+                  <xsd:element name="role" type="xsd:string" />
+                  <xsd:element name="address" type="xsd:string" />
+                  <xsd:element name="entering-date" type="xsd:gYearMonth" />
+                  <xsd:element name="quitting-date" type="xsd:gYearMonth" nillable="true" />
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+
+      <xsd:element name="comment" type="xsd:string"></xsd:element>
+
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+</xsd:schema>

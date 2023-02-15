@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="config.xsd">
+
+  <name>osawa-koki</name>
+  <age>1998-10-25</age>
+  <sex>Male</sex>
+  <height>182</height>
+  <weight>65</weight>
+
+  <educational-background>
+    <school>
+      <name>越谷北高等学校</name>
+      <address>埼玉県</address>
+      <entering-date>2014-04</entering-date>
+      <graduating-date>2017-03</graduating-date>
+    </school>
+    <school>
+      <name>明治大学</name>
+      <majoring>会計学</majoring>
+      <address>東京都</address>
+      <entering-date>2017-04</entering-date>
+      <graduating-date>2022-03</graduating-date>
+    </school>
+  </educational-background>
+
+  <professional-background>
+    <work>
+      <name>株式会社ソフトクリエイトホールディングス</name>
+      <role>セキュリティエンジニア</role>
+      <address>東京都</address>
+      <entering-date>2022-04</entering-date>
+      <quitting-date>2023-03</quitting-date>
+    </work>
+    <work>
+      <name>SecureNavi株式会社</name>
+      <role>Webエンジニア(フロントエンド・バックエンド・インフラ)</role>
+      <address>東京都</address>
+      <entering-date>2023-04</entering-date>
+      <quitting-date xsi:nil="true"></quitting-date>
+    </work>
+  </professional-background>
+
+  <comment>🐙 タコさんマークのエンジニア 🐙</comment>
+
+</person>
