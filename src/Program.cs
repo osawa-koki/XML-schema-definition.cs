@@ -37,7 +37,17 @@ XmlReaderSettings settings = new()
   ValidationType = ValidationType.Schema,
   Schemas = schemaSet
 };
-settings.ValidationEventHandler += (object? sender, ValidationEventArgs e) => { validation_check = false; };
+settings.ValidationEventHandler += (object? sender, ValidationEventArgs e) => {
+  if (e.Severity == XmlSeverityType.Warning)
+  {
+    Console.WriteLine($"Validation Warning ({e.Message})");
+  }
+  if (e.Severity == XmlSeverityType.Error)
+  {
+    Console.WriteLine($"Validation Error ({e.Message})");
+    validation_check = false;
+  }
+};
 
 // XMLデータの読み込み
 using (StringReader stringReader = new(xml_content))
