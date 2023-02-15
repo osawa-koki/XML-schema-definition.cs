@@ -49,8 +49,8 @@ using (XmlReader xmlReader = XmlReader.Create(stringReader, settings))
 if (validation_check)
 {
   Console.WriteLine("Validation successed!!!");
+  return 0;
 } else {
   Console.WriteLine("Validation failed...");
+  return 1;
 }
-
-return 0;
