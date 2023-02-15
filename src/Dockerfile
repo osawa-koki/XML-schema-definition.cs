@@ -8,7 +8,6 @@ WORKDIR /src
 COPY ["./Program.csproj", "./src/"]
 RUN dotnet restore "./src/Program.csproj"
 COPY . .
-WORKDIR "/src"
 RUN dotnet build "./Program.csproj" -c Release -o /app/build
 
 FROM build AS publish
