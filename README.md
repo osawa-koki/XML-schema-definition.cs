@@ -1,6 +1,6 @@
 # XML-schema-definition.cs
 
-XMLスキーマ定義の検証をC#で行うためのサンプルプロジェクト。  
+🖌🖌🖌 XMLスキーマ定義の検証をC#で行うためのサンプルプロジェクト。  
 
 ![成果物](./docs/img/fruit.gif)  
 
